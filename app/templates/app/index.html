@@ -4,6 +4,9 @@
 
 <div class="row my-4">
   <div class="col-md-8">
+    {% if keyword %}
+      <h4 class="mb-4">The result of {{ keyword }}</h4>
+    {% endif %}
     {% for post in post_data %}
     <div class="card mb-4">
       {% if post.image %}
@@ -50,6 +53,15 @@
             </div>
           {% endfor %}  
         </div>
+      </div>
+    </div>
+    <div class="card my-4">
+      <h5 class="card-header">Search</h5>
+      <div class="card-body">
+        <form method="get" action="{% url 'search' %}" class="input-group">
+          <input type="text" class="form-control" name="keyword" placeholder="Search">
+          <button class="btn btn-warning ml-2" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </div>
