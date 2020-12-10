@@ -1,1 +1,1 @@
-web: gunicorn djangblog.wsgi:application -b 0.0.0.0:$PORT
+web: gunicorn tomablog.wsgi:application -b 0.0.0.0:$PORT
