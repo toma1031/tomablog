@@ -1,1 +1,1 @@
-web: gunicorn djangpblog.wsgi:application -b 0.0.0.0:$PORT
+web: gunicorn djangpblog.wsgi --log-file -
