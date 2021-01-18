@@ -114,7 +114,6 @@ Pygments==2.6.1
 PyJWT==1.7.1
 pylint-django==2.3.0
 pylint-plugin-utils==0.6
-pyodbc===4.0.0-unsupported
 pyparsing==2.4.7
 pyrsistent==0.16.0
 pytest==5.4.3
